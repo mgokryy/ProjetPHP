@@ -93,6 +93,11 @@ class GameController
         }
 
         $_SESSION['currentQuestion']++;
+        if ($_SESSION['currentQuestion'] >= 7) {
+            header("Location: index.php?page=jeu_result");
+            exit();
+        }
+
         $this->loadQuestion();
         header("Location: index.php?page=jeu");
         exit();

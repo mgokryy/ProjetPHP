@@ -21,7 +21,7 @@ $totalQuestions = $_SESSION['currentQuestion'];
 <body>
     <h1>Résultat du Jeu</h1>
 
-    <?php if ($totalQuestions >=7 && $score >= 1000000 ): ?>
+    <?php if ($score >= 1000000 ): ?>
         <h2>Félicitations ! 🎉</h2>
         <p>Vous avez remporté la partie avec un score de <strong><?php echo $score; ?></strong> fcfa!!</p>
     <?php else: ?>
